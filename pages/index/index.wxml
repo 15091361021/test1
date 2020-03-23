@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<!--
+<view class="container">
+  <block wx:for="{{objectArray}}">
+    <view>索引---{{index}}+id-----{{item.id}}</view>
+    <view></view>
+  </block>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+-->
+
+<view class="top">
+  <view class="place" bindtap='bindcity'>{{city}}</view>
+  <view bindtap='duk_city' bindtap='bindcity'>
+    <image src="../images/bottom.png" class="top_img"></image>
+  </view>
+  <view> 
+    <input type="text" class="search" placeholder-class="input-placeholder"></input>
+  </view>
+</view> 
+
+
+
+

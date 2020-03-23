@@ -1,0 +1,33 @@
+/**index.wxss**/
+.top{
+  height: 100rpx;
+  background: #cc0000;
+  z-index: -1;
+}
+.place{
+  margin-left: 2%;
+  margin-top: 24rpx;
+  width: 13%;
+  float: left;
+  font-size:30rpx;
+  color: white;
+  text-align: center;
+  /* border: 1px red solid; */
+}
+.top_img{
+  margin-top: 26rpx;
+  width: 32rpx;
+  height: 32rpx;
+  float: left;
+  /* border: 1px red solid; */
+}
+.search{
+  /* border: 1px red solid; */
+  height: 70rpx;
+  width:65%;
+  float: left;
+  margin-left: 4%;
+  margin-top: 12rpx;
+  border-radius: 30rpx;
+  background: white;
+}
