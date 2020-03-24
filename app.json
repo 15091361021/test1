@@ -4,7 +4,11 @@
     "pages/find/find",
     "pages/my/my",
     "pages/face_city/face_city",
-    "pages/my_collect/my_collect"
+    "pages/my_collect/my_collect",
+    "pages/my_comment/my_comment",
+    "pages/my_opinion/my_opinion",
+    "pages/my_news/my_news",
+    "pages/my_set/my_set"
   ],
   "window": {
     "backgroundTextStyle": "light",

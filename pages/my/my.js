@@ -120,7 +120,7 @@ Page({
    */
   duk_opinion() {
     wx.navigateTo({
-      url: '../mine_opinion/mine_opinion',
+      url: '../my_opinion/my_opinion',
     })
   },
   /**
@@ -128,7 +128,7 @@ Page({
    */
   duk_news() {
     wx.navigateTo({
-      url: '../mine_news/mine_news',
+      url: '../my_news/my_news',
     })
   },
   /**
@@ -136,7 +136,7 @@ Page({
    */
   duk_set() {
     wx.navigateTo({
-      url: '../mine_set/mine_set',
+      url: '../my_set/my_set',
     })
   }
 })
