@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/find/find",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/face_city/face_city"
   ],
   "window": {
     "backgroundTextStyle": "light",
