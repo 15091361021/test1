@@ -7,7 +7,7 @@ Page({
   data: {
     //用户个人信息 
     userInfo: {
-      avatarUrl: "../../images/mine/o1.png",//用户头像
+      avatarUrl: "../images/unload.png",//用户头像
       nickName: "未登录",//用户昵称
     }
   },
