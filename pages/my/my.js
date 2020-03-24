@@ -96,7 +96,7 @@ Page({
    */
   duk_collect: function () {
     wx.navigateTo({
-      url: '../mine_collect/mine_collect',
+      url: '../my_collect/my_collect',
     })
   },
   /**

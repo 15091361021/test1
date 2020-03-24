@@ -1,7 +1,9 @@
 //index.js
 //获取应用实例
-const app = getApp()
-
+const app = getApp();
+var QQMapWX = require('../../utils/qqmap-wx-jssdk.js');
+var qqmapsdk;
+var scity = "西安";
 Page({
   data: {
     province: '',
@@ -11,6 +13,7 @@ Page({
     comm:[],
   },
   onLoad: function() {
+    
     qqmapsdk = new QQMapWX({
       key: 'T75BZ-5GUW4-GZWUJ-DXK6G-7CY25-6FFTM' //这里自己的key秘钥进行填充
     });

@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/find/find",
     "pages/my/my",
-    "pages/face_city/face_city"
+    "pages/face_city/face_city",
+    "pages/my_collect/my_collect"
   ],
   "window": {
     "backgroundTextStyle": "light",
