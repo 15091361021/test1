@@ -1,0 +1,151 @@
+<!--index.wxml-->
+<view>
+  <view class="search-box">
+    <input class="search-box-input" />
+    <view class="search-box-icon" >
+      <image src="../images/search.png"/>
+      <text>搜索房源</text>
+    </view>
+  </view>
+  <view class="banner-box">
+    <swiper class="banner-box-swiper" bindchange="bannerSwiperChange">
+      <block>
+        <swiper-item>
+          <image src="../images/banner.png" class="banner-img"/>
+        </swiper-item>
+        <swiper-item>
+          <image src="../images/banner.png" class="banner-img"/>
+        </swiper-item>
+        <swiper-item>
+          <image src="../images/banner.png" class="banner-img"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="banner-indicator-info">
+      <view class="banner-indicator-text">{{bannerCurrentIndex}}</view>
+      <view class="banner-indicator-text-small"> /3</view>
+    </view>
+  </view>
+  <view class="housetypes-box">
+    <navigator url="/pages/longrent/index" class="housetypes-item">
+      <image class="housetypes-item-img" src="../images/long-rent.png"/>
+      <text class="housetypes-item-text">长租</text>
+    </navigator>
+    <navigator url="/pages/shortrent/index" class="housetypes-item">
+      <image class="housetypes-item-img" src="../images/short-rent.png"/>
+      <text class="housetypes-item-text">短租</text>
+    </navigator>
+    <navigator url="/pages/studentrent/index" class="housetypes-item">
+      <image class="housetypes-item-img" src="../images/student-rent.png"/>
+      <text class="housetypes-item-text">学生租</text>
+    </navigator>
+    <navigator url="/pages/appointment/index" class="housetypes-item">
+      <image class="housetypes-item-img" src="../images/deposit.png"/>
+      <text class="housetypes-item-text">房屋托管</text>
+    </navigator>
+  </view>
+  <view class="banner-small-box">
+    <swiper class="banner-small-box-swiper" bindchange="swiperChange">
+      <block>
+        <swiper-item>
+          <image src="../images/banner_small.png" class="banner-small-img"/>
+        </swiper-item>
+        <swiper-item>
+          <image src="../images/banner_small.png" class="banner-small-img"/>
+        </swiper-item>
+        <swiper-item>
+          <image src="../images/banner_small.png" class="banner-small-img"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="indicator-dots">
+      <view class="dot {{index == currentIndex ? 'active' : ''}}" wx:for="{{[0, 1, 2]}}"></view>
+    </view>
+  </view>
+  <view class="select-types-box {{isHouseTypesFix ? 'select-types-box-fixed' : ''}}">
+    <view class="select-types-item {{downItem == 1?'select-types-item-active':''}}" data-id="1" bindtap='showMask'>
+      <text class="select-types-item-text">房屋类型
+      </text>
+      <view class="arrow-down"></view>
+    </view>
+    <view class="select-types-item {{downItem == 2?'select-types-item-active':''}}"  data-id="2" bindtap='showMask'>
+      <text class="select-types-item-text">户型</text>
+      <view class="arrow-down"></view>
+    </view>
+    <view class="select-types-item {{downItem == 3?'select-types-item-active':''}}"  data-id="3" bindtap='showMask'>
+      <text class="select-types-item-text">租金</text>
+      <view class="arrow-down"></view>
+    </view>
+    <view class="select-types-item {{downItem == 4?'select-types-item-active':''}}"  data-id="4" bindtap='showMask'>
+      <text class="select-types-item-text">位置</text>
+      <view class="arrow-down"></view>
+    </view>
+    <view class="select-types-item {{downItem == 5?'select-types-item-active':''}}"  data-id="5" bindtap='showMask'>
+      <text class="select-types-item-text">配套设施</text>
+      <view class="arrow-down"></view>
+    </view>
+    <view class="mask-box" wx:if="{{isShowMask}}" bindtap="hideMask">
+      <view catchtap="stop">
+        <view class="mask-box-content"  wx:if="{{downItem == 1}}">
+            <view class="down-item down-item-active">不限</view>
+            <view class="down-item">别墅</view>
+            <view class="down-item">联排</view>
+            <view class="down-item">公寓</view>
+          </view>
+          <view class="mask-box-content" wx:if="{{downItem == 2}}">
+            <view class="down-item">不限</view>
+            <view class="down-item">一局</view>
+            <view class="down-item">二局</view>
+            <view class="down-item">三局</view>
+          </view>
+          <view class="mask-box-content" wx:if="{{downItem == 3}}">
+            <view class="down-item">不限</view>
+            <view class="down-item">$400-$500</view>
+            <view class="down-item">$500-$750</view>
+            <view class="down-item">$750以上</view>
+          </view>
+          <view class="mask-box-content" wx:if="{{downItem == 4}}">
+            <view class="down-item">不限</view>
+            <view class="down-item">墨尔本大学</view>
+            <view class="down-item">MRIT</view>
+            <view class="down-item">Monash大学</view>
+            <view class="down-item">CBD</view>
+            <view class="down-item">东南区</view>
+            <view class="down-item">西区</view>
+            <view class="down-item">Boxhill</view>
+          </view>
+          <view class="mask-box-content" wx:if="{{downItem == 5}}">
+            <view class="down-item">不限</view>
+            <view class="down-item">全包</view>
+            <view class="down-item">不包</view>
+          </view>
+      </view>
+      
+    </view>
+  </view>
+  
+  <view class="house-list-box">
+    <view class="house-list">
+      <view class="house-list-item" wx:for="{{[1, 2, 3, 4, 5, 6]}}">
+        <view class="house-list-item-img">  
+          <image src="../images/house_img.png"/>
+        </view>
+        <view class="house-list-item-info">
+          <view class="info-title">澳洲 南澳大利亚 阿德莱德3卧2卫 阿德莱德3卧2卫</view>
+          <text class="info-size">长租 · 3室2厅2卫  | 4/18层</text>
+          <view class="info-location">
+            <image src="../images/location.png"></image>
+            <text>澳洲 南澳大利亚</text>
+          </view>
+          <view class="info-tags">
+            <image class="tag" mode="aspectFit" src="../images/tag_source.png"></image>
+            <image class="tag" mode="aspectFit" src="../images/tag_allin.png"></image>
+            <image class="tag" mode="aspectFit" src="../images/tag_college.png"></image>
+          </view>
+          <view class="info-price">$364<text class="info-price-small">/周</text></view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

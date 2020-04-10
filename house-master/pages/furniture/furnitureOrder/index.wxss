@@ -1,0 +1,89 @@
+.form {
+  padding: 0 40rpx;
+}
+.form-title {
+  font-size: 32rpx;
+  color: #1D2023;
+  margin: 40rpx 0;
+  display: inline-block;
+  font-weight:bold;
+}
+.form-item {
+  height: 110rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid  #E4E5EA;
+}
+.form-item text {
+  width: 160rpx;
+  font-size: 32rpx;
+  color: #3F454B;
+}
+.form-item input {
+  font-size: 32rpx;
+}
+.form textarea {
+  height: 200rpx;
+  font-size: 32rpx;
+  letter-spacing: 0.55rpx;
+}
+.info-item{
+  display: flex;
+  justify-content: space-between;
+}
+.info-item .info-name{
+  width: 430rpx;
+  font-family: PingFangSC-Regular;
+font-size: 28rpx;
+color: #3F454B;
+letter-spacing: 0.5px;
+text-align: justify;
+line-height: 40rpx;
+height: 40rpx;
+}
+.info-item .info-money{
+  width: 120rpx;
+  font-size: 28rpx;
+  color: #FC3D4C;
+  letter-spacing: 0.88px;
+  text-align: right;
+  line-height: 40rpx;
+  height: 40rpx;
+}
+.info-item .info-num{
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size:28rpx;
+  color: #9399A5;
+letter-spacing: 0.88px;
+text-align: right;
+}
+.sum{
+  font-size:32rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40rpx;
+  border-bottom:1px solid #E4E5EA;
+  padding-bottom:20rpx;
+
+}
+.sum text{
+  color: #FC3D4C;
+}
+/* .top{
+  border-bottom:1px solid #E4E5EA;
+} */
+.footer-box{
+  width: 690rpx;
+  height: 94rpx;
+  line-height: 94rpx;
+  text-align: center;
+  background: #01AF66;
+border-radius: 10px;
+color: #fff;
+margin-left: 30rpx;
+font-family: PingFangSC-Regular;
+font-size: 36rpx;
+position: fixed;
+bottom: 4vh;
+}

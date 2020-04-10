@@ -1,0 +1,96 @@
+/**index.wxss**/
+.house-item {
+  height: 246rpx;
+  display: flex;
+}
+.house-item-img image {
+  width: 220rpx;
+  height: 166rpx;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+}
+.house-item-info {
+  margin-left: 21.4rpx;
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+  width: 450rpx;
+}
+.info-title {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #3F454B;
+  letter-spacing: 0;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.info-size {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #9399A5;
+  letter-spacing: 0;
+  text-align: justify;
+  margin-top: 54rpx;
+}
+.info-location {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #9399A5;
+  letter-spacing: 0;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+}
+.info-location image {
+  width: 25rpx;
+  height: 26rpx;
+}
+.line {
+  width: 100%;
+  height: 1rpx;
+  background: #FFFFFF;
+  box-shadow: 0 1rpx 1rpx 0 #E4E5EA;
+}
+
+.form {
+  padding: 0 40rpx;
+}
+.form-title {
+  font-size: 32rpx;
+  color: #1D2023;
+  margin: 40rpx 0;
+  display: inline-block;
+}
+.form-item {
+  height: 110rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid  #E4E5EA;
+}
+.form-item text {
+  width: 160rpx;
+  font-size: 32rpx;
+  color: #3F454B;
+}
+.form-item input {
+  font-size: 32rpx;
+}
+.form textarea {
+  height: 200rpx;
+  font-size: 32rpx;
+  letter-spacing: 0.55rpx;
+}
+.footer-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 94rpx;
+  line-height: 94rpx;
+  background: #01AF66;
+  font-size: 36rpx;
+  color: #FFFFFF;
+  text-align: center;
+}

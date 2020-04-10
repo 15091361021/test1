@@ -1,0 +1,4 @@
+<view class='body'>
+  <image src='../../images/empty.jpg'></image>
+  <view class='tips'>暂无购买记录</view>
+</view>

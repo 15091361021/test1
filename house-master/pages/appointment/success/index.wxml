@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view>
+  <view class="appointment-status-box">
+    <image src="../../images/appointment-success.png"></image>
+    <text class="appointment-status">您已成功提交预约信息</text>
+    <text class="appointment-tip">我们的工作人员会尽快与您联系，请保持电话畅通或及时查收电子邮件～</text>
+  </view>
+  <view class="house-list-box">
+    <view class="house-list">
+      <view class="house-list-item" wx:for="{{[1, 2, 3, 4, 5, 6]}}">
+        <view class="house-list-item-img">  
+          <image src="../../images/house_img.png"/>
+        </view>
+        <view class="house-list-item-info">
+          <view class="info-title">澳洲 南澳大利亚 阿德莱德3卧2卫 阿德莱德3卧2卫</view>
+          <text class="info-size">长租 · 3室2厅2卫  | 4/18层</text>
+          <view class="info-location">
+            <image src="../../images/location.png"></image>
+            <text>澳洲 南澳大利亚</text>
+          </view>
+          <view class="info-tags">
+            <image class="tag" mode="aspectFit" src="../../images/tag_source.png"></image>
+            <image class="tag" mode="aspectFit" src="../../images/tag_allin.png"></image>
+            <image class="tag" mode="aspectFit" src="../../images/tag_college.png"></image>
+          </view>
+          <view class="info-price">$364<text class="info-price-small">/周</text></view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

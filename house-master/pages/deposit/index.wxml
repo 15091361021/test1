@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class='deposit-page'>
+  <view class='title-box'>
+    <text>适用于整租房屋</text>
+    <text class='title-phone'>咨询电话：<text>130000000</text></text>
+  </view>
+  <view class='apply-info-box'>
+    <view class='title'>申请人信息</view>
+    <view class='info-item item-username'>
+      <text class='label'>姓名</text>
+      <input placeholder='请输入真实姓名'/>
+    </view>
+    <view class='info-item item-phone'>
+      <text class='label'>联系电话</text>
+      <input placeholder='请输入联系电话'/>
+    </view>
+    <view class='info-item item-email'>
+      <text class='label'>电子邮箱</text>
+      <input placeholder='请输入电子邮箱'/>
+    </view>
+  </view>
+  <view class='house-info-box'>
+    <view class='title'>房屋信息</view>
+    <view class='info-item item-rent'>
+      <text class='label'>预期租金</text>
+      <input placeholder='请输入预期租金 ($)'/>
+    </view>
+    <view class='info-item item-address'>
+      <text class='label'>房屋地址</text>
+      <input placeholder='请输入房屋地址'/>
+    </view>
+    <view class='info-item item-housetype'>
+      <text class='label'>房屋类型</text>
+      <input placeholder='请选择房屋类型'/>
+      <view class="right-arrow"></view>
+    </view>
+  </view>
+  <view class='title'>配套设备<text class='sub-title'>（点选配套设施）</text></view>
+  <view class='title'>其他描述</view>
+</view>

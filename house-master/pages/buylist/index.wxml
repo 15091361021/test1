@@ -1,0 +1,19 @@
+<view class='body'>
+  <view class='furniture-activity'>
+    <image src='../images/item.png'></image>
+    <view class='title'>
+      <view class='title-con'>经济实用型</view>
+      <view class='title-money'>$4999</view>
+      
+    </view>
+    <view class="buytime"><view>购买时间:</view><view class='time'>2019-09-01 12:00:00</view></view>
+  </view>
+  <view class='furniture-activity'>
+    <image src='../images/item1.png'></image>
+    <view class='title'>
+      <view class='title-con'>豪华小资型</view>
+      <view class='title-money'>$4999</view>
+    </view>
+    <view class="buytime"><view>购买时间:</view><view class='time'>2019-09-01 12:00:00</view></view>
+  </view>
+</view>

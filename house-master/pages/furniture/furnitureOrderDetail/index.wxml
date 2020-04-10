@@ -1,0 +1,44 @@
+<view class='body'>
+    <view class='ordertime'>
+      <view class='tip'>订单日前：</view>
+      <view class='time'>2019年3月20日</view>
+    </view>
+    <view class='form top'>
+      <text class="form-title">优选家具套餐A</text>
+      <view class='info'>
+        <view class='info-item'>
+          <view class='info-name'>*****(餐桌)</view>
+          <view class='info-money'>$5000</view>
+          <view class='info-num'>x1</view>
+        </view>
+        <view class='info-item'>
+          <view class='info-name'>(餐桌)</view>
+          <view class='info-money'>$5000</view>
+          <view class='info-num'>x1</view>
+        </view>
+      </view>
+      <view class='sum'>
+        <view class=''>合计：<text>$222</text></view>
+        <view style='color:#9399A5;'>x12</view>
+      </view>
+    </view>
+  <view class="form">
+    <text class="form-title">收货信息</text>
+    <view class="form-item item-username">
+      <text>姓名</text>
+      <view class="input">张军</view>
+    </view>
+    <view class="form-item item-phone">
+      <text>联系电话</text>
+      <view class="input">张军</view>
+    </view>
+    <view class="form-item item-email">
+      <text>收货地址</text>
+      <view class="input">张军</view>
+    </view>
+    <view class="form-item item-email">
+      <text>备注信息</text>
+      <view class="input">张军</view>
+    </view>
+  </view>
+</view>

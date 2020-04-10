@@ -1,0 +1,198 @@
+<view class="detail">
+  <view class="banner-box">
+        <swiper class="banner-box-swiper" bindchange="bannerSwiperChange">
+          <block>
+            <swiper-item>
+              <image src="../images/banner.png" class="banner-img"/>
+            </swiper-item>
+            <swiper-item>
+              <image src="../images/banner.png" class="banner-img"/>
+            </swiper-item>
+            <swiper-item>
+              <image src="../images/banner.png" class="banner-img"/>
+            </swiper-item>
+          </block>
+        </swiper>
+        <view class="banner-indicator-info">
+          <view class="banner-indicator-text">{{bannerCurrentIndex}}</view>
+          <view class="banner-indicator-text-small"> /3</view>
+        </view>
+      </view>
+  <view class="house-title">
+    <view class="title1">澳大利亚首都领地</view>
+    <view class="money">$364<text>/周</text></view>
+    <view class="label">
+      <image
+        wx:for="{{ array }}"
+        class="tag"
+        data-index="{{ index }}"
+        bindload="imageLoad"
+        src="{{ item.url }}"
+        style="width: {{ images[index].width }}rpx; height: {{images[index].height}}rpx;"
+      ></image>
+    </view>
+    <!-- 另一种方式；固定宽高 -->
+    <!-- <view class="label">
+      <image class="tag" src="../images/tag_source.png" style="width:96rpx;height:28rpx;"></image>
+      <image class="tag" src="../images/tag_allin.png" style="width:56rpx;height:28rpx;"></image>
+      <image
+        class="tag"
+        src="../images/tag_college.png"
+        style="width:129rpx;height:28rpx;"
+      ></image>
+    </view> -->
+  </view>
+  <view class="house-detail">
+    <view class="house-detail-row">
+      <view class="house-detail-item">
+        <view class="type">
+          租赁类型
+        </view>
+        <view>长租</view>
+      </view>
+      <view class="house-detail-item">
+        <view class="type">
+          面积
+        </view>
+        <view>234</view>
+      </view>
+    </view>
+    <view class="house-detail-row">
+      <view class="house-detail-item">
+        <view class="type">
+          房源类型
+        </view>
+        <view>公寓</view>
+      </view>
+      <view class="house-detail-item">
+        <view class="type">
+          户型
+        </view>
+        <view>3室2厅2卫</view>
+      </view>
+    </view>
+    <view class="house-detail-row">
+      <view class="house-detail-item">
+        <view class="type">
+          入住时间
+        </view>
+        <view>2019-05-09 </view>
+      </view>
+    </view>
+  </view>
+  <view class="connect-detail">
+    <view class="connect-detail-row">
+      <view class="type"><image src="../images/tel.png" ></image>咨询电话</view>
+      <view class="item-content" style='color:#3072F6;text-decoration:underline;'>13000002222</view>
+    </view>
+    <view class="connect-detail-row">
+      <view class="type"><image src="../images/location.png" ></image>地理位置</view>
+      <view class="item-content">澳洲 南澳大利亚 墨尔本</view>
+    </view>
+    <view class='map'>
+    <image src='../images/map.png'></image>
+    </view>
+    
+  </view>
+  <view class="house-device">
+    <view class='title'>配套设施</view>
+    <view class="device-list">
+      <view class="device-item">
+        <image src="../images/bed.png"></image>
+        <text>床</text>
+      </view>
+      <view class="device-item">
+        <image src="../images/bingxiang.png"></image>
+        <text>冰箱</text>
+      </view>
+      <view class="device-item">
+        <image src="../images/tv.png"></image>
+        <text>电视</text>
+      </view>
+      <view class="device-item">
+        <image src="../images/fire.png"></image>
+        <text>烤箱</text>
+      </view>
+      <view class="device-item">
+        <image src="../images/warm.png"></image>
+        <text>暖气</text>
+      </view>
+      <view class="device-item">
+        <image src="../images/washy.png"></image>
+        <text>洗衣机</text>
+      </view>
+      <view class="device-item">
+        <image src="../images/water.png"></image>
+        <text>热水器</text>
+      </view>
+      <view class="device-item">
+        <image src="../images/spa.png"></image>
+        <text>SPA</text>
+      </view>
+      <view class="device-item">
+        <image src="../images/floor.png"></image>
+        <text>地板</text>
+      </view>
+      <view class="device-item">
+        <image src="../images/jianshen.png"></image>
+        <text>健身房</text>
+      </view>
+      <view class="device-item">
+        <image src="../images/air.png"></image>
+        <text>空调</text>
+      </view>
+      <view class="device-item">
+        <image src="../images/swim.png"></image>
+        <text>游泳</text>
+      </view>
+      <view class="device-item">
+        <image src="../images/washball.png"></image>
+        <text>洗碗机</text>
+      </view>
+      <view class="device-item">
+        <image src="../images/cook.png"></image>
+        <text>炊具</text>
+      </view>
+      <view class="device-item">
+        <image src="../images/net.png"></image>
+        <text>宽带</text>
+      </view>
+      <view class="device-item">
+        <image src="../images/pk.png"></image>
+        <text>停车场</text>
+      </view>
+      
+
+    </view>
+  </view>
+  <view class="house-text">
+    <view class="title">社区介绍</view>
+    <text class="house-text-content">
+      社区区域Chadston所在的Monash市位于墨尔本的东南面，其面积达到82sqkm,它涵盖了包括Oakleigh,
+      Mount Waverley, Chadston,
+      Huntingdale等地区。与此同时它还是人口增长最快的区域之一，达到163,000人。在Monash这个不大的城市中，有37%的常住人口来自海外30多个国家，这为这个地区长期的人口增长提供了保证，它吸引了越来越多的移民居住此地，也为此地的房价上涨提供了强有力的驱动，是投资澳洲房产的优质选择。
+    </text>
+  </view>
+  <view class="bottom-box">
+    <view class="bottom-item item-like" bindtap="like">
+      <image src="../images/like.png"></image>
+      <text>收藏</text>
+    </view>
+    <view class="bottom-item item-share">
+      <image src="../images/like.png"></image>
+      <text>分享</text>
+    </view>
+    <view class="bottom-item item-online-service">
+      在线咨询
+    </view>
+    <view class="bottom-item item-appointment">
+      <navigator url="/pages/index/index">预约看房</navigator>
+    </view>
+  </view>
+  <view class="toast-box" wx:if="{{ isShowToast }}">
+    <view class="toast-content">
+      <image src="../images/icon-success.png"></image>
+      <text>收藏成功</text>
+    </view>
+  </view>
+</view>

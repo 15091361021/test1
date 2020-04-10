@@ -1,0 +1,20 @@
+.body{
+  height: 100vh;
+  background-color:rgb(255,255,255);
+  width: 100%;
+  text-align: center;
+}
+image{
+  width: 370rpx;
+  height: 276rpx;
+  margin:0 auto;
+  margin-top: 25vh;
+}
+.tips{
+  font-family: PingFangSC-Regular;
+  font-size: 36rpx;
+  color: #9399A5;
+  letter-spacing: 0.56px;
+  text-align: center;
+  margin-top: 40rpx;
+}

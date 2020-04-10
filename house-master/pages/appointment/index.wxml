@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view>
+  <view class="house-item">
+    <view class="house-item-img">  
+      <image src="../images/house_img.png"/>
+    </view>
+    <view class="house-item-info">
+      <view class="info-title">澳洲 南澳大利亚 阿德莱德3卧2卫 阿德莱德3卧2卫</view>
+      <view class="info-location">
+        <image src="../images/location.png"></image>
+        <text>澳洲 南澳大利亚</text>
+      </view>
+      <text class="info-size">房屋编号：00012542</text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="form">
+    <text class="form-title">联系人信息</text>
+    <view class="form-item item-username">
+      <text>姓名</text>
+      <input placeholder="请输入真实姓名"/>
+    </view>
+    <view class="form-item item-phone">
+      <text>联系电话</text>
+      <input placeholder="请输入联系电话"/>
+    </view>
+    <view class="form-item item-email">
+      <text>电子邮箱</text>
+      <input placeholder="请输入电子邮箱"/>
+    </view>
+    <text class="form-title">备注信息</text>
+    <textarea name="" id="" cols="30" rows="10" placeholder="更多看房找房需求（选填）"></textarea>
+  </view>
+  <view class="footer-box" bindtap="submit">
+    提交预约
+  </view>
+</view>

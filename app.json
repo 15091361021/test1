@@ -26,17 +26,14 @@
         "text": "首页",
         "iconPath": "pages/images/shouye.png",
         "selectedIconPath": "pages/images/shouye.png"
-      },{
-      "pagePath":"pages/find/find",
-      "text":"发现",
-      "iconPath":"pages/images/find.png",
-      "selectedIconPath":"pages/images/find.png"
-    },{
-      "pagePath": "pages/my/my",
-      "text": "我的",
-      "iconPath": "pages/images/my.png",
-      "selectedIconPath": "pages/images/my.png"
-    }]
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "pages/images/my.png",
+        "selectedIconPath": "pages/images/my.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

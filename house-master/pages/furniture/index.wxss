@@ -1,0 +1,34 @@
+.body{
+  height: 100vh;
+  background-color:rgb(249,249,251);
+}
+.furniture-activity{
+  width: 100%;
+  padding:20rpx 0;
+  border-bottom: 1px solid #E4E5EA;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.furniture-activity image{
+  width: 690rpx;
+  margin-left:30rpx;
+}
+.furniture-activity .title{
+  padding:20rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.furniture-activity .title .title-con{
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #3F454B;
+  letter-spacing: 0;
+  text-align: justify;
+}
+.furniture-activity .title .title-money{
+  font-family: PingFangSC-Medium;
+font-size: 32rpx;
+color: #FC3D4C;
+letter-spacing: 0;
+text-align: right;
+}
